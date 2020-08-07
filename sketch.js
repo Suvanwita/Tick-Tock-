@@ -34,9 +34,10 @@ hrLine=line(400,200,470,180);
 fill("yellow");
 ellipse(400,400,500,500);
 
+
 //second hand
   translate(400,400);
-  rotate(-90);
+  rotate(0);//-90
   push();
   rotate(scAngle);
   stroke("blue"); 
@@ -47,7 +48,7 @@ ellipse(400,400,500,500);
 
   //minute hand
   translate(0,0);
-  rotate(-180);
+  rotate(-90);//-180
   push();
   rotate(mnAngle);
   stroke("red"); 
@@ -57,7 +58,7 @@ ellipse(400,400,500,500);
 
  //hour hand
   translate(0,0);
-  rotate(180);
+  rotate(240);//180
   push();
   rotate(hrAngle);
   stroke("green"); 
