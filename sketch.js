@@ -16,7 +16,7 @@ function draw() {
 
  scAngle=map(sc,0,60,0,360);
  mnAngle=map(mn,0,60,0,360);
- hrAngle=map(hr,0,60,0,360);
+ hrAngle=map(hr%12,0,60,0,360);
 /*
 stroke(255,0,0);
 strokeWeight(7);
@@ -58,12 +58,12 @@ ellipse(400,400,500,500);
 
  //hour hand
   translate(0,0);
-  rotate(120);//180
+  rotate(180);//180
   push();
   rotate(hrAngle);
   stroke("green"); 
   strokeWeight(6);
-  line(0,0,150,0);
+  line(0,0,130,0);
   pop();
 /*
   rotate(radians(scAngle));
