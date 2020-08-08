@@ -37,7 +37,7 @@ ellipse(400,400,500,500);
 
 //second hand
   translate(400,400);
-  rotate(0);//-90
+  rotate(-80);//-90
   push();
   rotate(scAngle);
   stroke("blue"); 
@@ -48,7 +48,7 @@ ellipse(400,400,500,500);
 
   //minute hand
   translate(0,0);
-  rotate(-90);//-180
+  rotate(-10);//-180
   push();
   rotate(mnAngle);
   stroke("red"); 
@@ -58,7 +58,7 @@ ellipse(400,400,500,500);
 
  //hour hand
   translate(0,0);
-  rotate(240);//180
+  rotate(120);//180
   push();
   rotate(hrAngle);
   stroke("green"); 
